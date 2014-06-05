@@ -75,14 +75,14 @@ describe '#div' do
 context "with the correct params" do
 it "Should Sum two numbers" do
 calc = Calculator.new(8,4)
-expect(calc.sum).to eql(2)
+expect(calc.div).to eql(2)
 end
 end
 
 context "with the incorrect params" do
 it "Should throw an error" do
-calc = Calculator.new(0,3)
-expect{calc.sum}.to raise_error
+calc = Calculator.new(nil,3)
+expect{calc.div}.to raise_error
 end  
 end
 end
